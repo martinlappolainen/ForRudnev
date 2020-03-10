@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Layouts._">
+    <ContentPage.Content>
+        <StackLayout>
+    
+            <ListView>
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Esmaspäev</x:String>
+                        <x:String>Teisipäev</x:String>
+                        <x:String>Kolmapäev</x:String>
+                        <x:String>Neljapäev</x:String>
+                        <x:String>Reede</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+            <!--<ScrollView>
+                <Label Text="Punkt 1"/>
+                <Label Text="Punkt 2"/>
+                <Label Text="Punkt 3"/>
+                <Label Text="Punkt 4"/>
+            </ScrollView>-->
+            <Button x:Name="button1" Text="Vajuta Siia!" Clicked="Button1_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
